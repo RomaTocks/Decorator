@@ -1,0 +1,345 @@
+<font color = "blue">1	|</font>﻿#<font color = "purple">include</font> &lt<font color = "green">string</font>&gt
+<font color = "blue">2	|</font>#<font color = "purple">include</font> &lt<font color = "green">ios</font>tream&gt
+<font color = "blue">3	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">fstream</font>&gt
+<font color = "blue">4	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">vector</font>&gt
+<font color = "blue">5	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">istream</font>&gt
+<font color = "blue">6	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">map</font>&gt 
+<font color = "blue">7	|</font>
+<font color = "blue">8	|</font>std::<font color = "Goldenrod">map</font>&ltstd::<font color = "green">string</font>, std::string&gt myFirstMap =
+<font color = "blue">9	|</font>{
+<font color = "blue">10	|</font>    { "<font color = "purple">include</font>", "purple" },
+<font color = "blue">11	|</font>    { "<font color = "purple">else</font>", "purple" },
+<font color = "blue">12	|</font>    { "<font color = "purple">return</font>", "purple" },
+<font color = "blue">13	|</font>    { "<font color = "purple">for</font>", "purple" },
+<font color = "blue">14	|</font>    { "<font color = "purple">if</font>", "purple" },
+<font color = "blue">15	|</font>    { "<font color = "blue">auto</font>", "blue" },
+<font color = "blue">16	|</font>    { "<font color = "blue">void</font>", "blue" },
+<font color = "blue">17	|</font>    { "<font color = "Goldenrod">close</font>", "Goldenrod" },
+<font color = "blue">18	|</font>    { "<font color = "Goldenrod">push_back</font>", "Goldenrod" },
+<font color = "blue">19	|</font>    { "<font color = "Goldenrod">insert</font>", "Goldenrod" },
+<font color = "blue">20	|</font>    { "<font color = "Goldenrod">find</font>", "Goldenrod" },
+<font color = "blue">21	|</font>    { "<font color = "Goldenrod">istream</font>", "Goldenrod" },
+<font color = "blue">22	|</font>    { "<font color = "green">ios</font>tream", "Goldenrod" },
+<font color = "blue">23	|</font>    { "<font color = "Goldenrod">fstream</font>", "Goldenrod" },
+<font color = "blue">24	|</font>    { "<font color = "Goldenrod">vector</font>", "Goldenrod" },
+<font color = "blue">25	|</font>    { "<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font>", "Goldenrod" },
+<font color = "blue">26	|</font>    { "<font color = "Goldenrod">cin</font>", "Goldenrod" },
+<font color = "blue">27	|</font>    { "<font color = "Goldenrod">endl</font>", "Goldenrod" },
+<font color = "blue">28	|</font>    { "<font color = "Goldenrod">map</font>", "Goldenrod" },
+<font color = "blue">29	|</font>    { "<font color = "Goldenrod">out</font>", "Goldenrod" },
+<font color = "blue">30	|</font>    { "<font color = "blue">int</font>", "blue" },
+<font color = "blue">31	|</font>    { "<font color = "blue">class</font>", "blue" },
+<font color = "blue">32	|</font>    { "<font color = "blue">public</font>", "blue" },
+<font color = "blue">33	|</font>    { "<font color = "blue">virtual</font>", "blue" },
+<font color = "blue">34	|</font>    { "<font color = "blue">override</font>", "blue" },
+<font color = "blue">35	|</font>    { "<font color = "blue">protected</font>", "blue" },
+<font color = "blue">36	|</font>    { "<font color = "blue">new</font>", "blue" },
+<font color = "blue">37	|</font>    { "<font color = "blue">delete</font>", "blue" },
+<font color = "blue">38	|</font>    { "<font color = "green">ios</font>", "green" },
+<font color = "blue">39	|</font>    { "<font color = "green">string</font>", "green" },
+<font color = "blue">40	|</font>    { "<font color = "Goldenrod">main</font>", "Goldenrod" },
+<font color = "blue">41	|</font>    { "<font color = "purple">while</font>", "purple" },
+<font color = "blue">42	|</font>    { "<font color = "Goldenrod">system</font>", "Goldenrod" }
+<font color = "blue">43	|</font>};
+<font color = "blue">44	|</font>std::<font color = "Goldenrod">vector</font>&ltstd::<font color = "green">string</font>&gt strings;
+<font color = "blue">45	|</font>std::<font color = "Goldenrod">vector</font>&ltstd::<font color = "green">string</font>&gt htmlstrings;
+<font color = "blue">46	|</font><font color = "blue">class</font> FileInterface
+<font color = "blue">47	|</font>{
+<font color = "blue">48	|</font><font color = "blue">public</font>:
+<font color = "blue">49	|</font>    <font color = "blue">virtual</font> ~FileInterface() {}
+<font color = "blue">50	|</font>    <font color = "blue">virtual</font> <font color = "blue">void</font> Output() {};
+<font color = "blue">51	|</font>    <font color = "blue">virtual</font> <font color = "blue">void</font> Input() {};
+<font color = "blue">52	|</font>};
+<font color = "blue">53	|</font><font color = "blue">class</font> File : <font color = "blue">public</font> FileInterface
+<font color = "blue">54	|</font>{
+<font color = "blue">55	|</font><font color = "blue">public</font>:
+<font color = "blue">56	|</font>
+<font color = "blue">57	|</font>    <font color = "blue">void</font> Output() <font color = "blue">override</font>
+<font color = "blue">58	|</font>    {
+<font color = "blue">59	|</font>        std::<font color = "Goldenrod">fstream</font> fs("Y:\TrueDecoratorLab.cpp", std::<font color = "green">ios</font>::in);
+<font color = "blue">60	|</font>        <font color = "purple">if</font> (fs.is_open())
+<font color = "blue">61	|</font>        {
+<font color = "blue">62	|</font>            std::<font color = "green">string</font> line;
+<font color = "blue">63	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "\nReading in progress ... " << std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">64	|</font>            <font color = "purple">while</font> (getline(fs, line))
+<font color = "blue">65	|</font>            {
+<font color = "blue">66	|</font>                <font color = "purple">for</font> (<font color = "blue">auto</font> d : line)
+<font color = "blue">67	|</font>			{
+<font color = "blue">68	|</font>				<font color = "purple">if</font> (d == '&lt')
+<font color = "blue">69	|</font>				{
+<font color = "blue">70	|</font>					line.<font color = "Goldenrod">insert</font>(line.<font color = "Goldenrod">find</font>(d), "&lt");				
+<font color = "blue">71	|</font>				}
+<font color = "blue">72	|</font>				<font color = "purple">if</font> (d == '&lt')
+<font color = "blue">73	|</font>				{
+<font color = "blue">74	|</font>					line.erase(line.<font color = "Goldenrod">find</font>(d), 1);
+<font color = "blue">75	|</font>				}
+<font color = "blue">76	|</font>			}
+<font color = "blue">77	|</font>			<font color = "purple">for</font> (<font color = "blue">auto</font> d : line)
+<font color = "blue">78	|</font>			{
+<font color = "blue">79	|</font>				<font color = "purple">if</font> (d == '&gt')
+<font color = "blue">80	|</font>				{
+<font color = "blue">81	|</font>					line.<font color = "Goldenrod">insert</font>(line.<font color = "Goldenrod">find</font>(d), "&gt");					
+<font color = "blue">82	|</font>				}
+<font color = "blue">83	|</font>				<font color = "purple">if</font> (d == '&gt')
+<font color = "blue">84	|</font>				{
+<font color = "blue">85	|</font>					line.erase(line.<font color = "Goldenrod">find</font>(d), 1);
+<font color = "blue">86	|</font>				}
+<font color = "blue">87	|</font>			}
+<font color = "blue">88	|</font>                <font color = "green">string</font>s.<font color = "Goldenrod">push_back</font>(line);
+<font color = "blue">89	|</font>            }
+<font color = "blue">90	|</font>        }
+<font color = "blue">91	|</font>        <font color = "purple">else</font>
+<font color = "blue">92	|</font>        {
+<font color = "blue">93	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">94	|</font>        }
+<font color = "blue">95	|</font>        fs.<font color = "Goldenrod">close</font>();        
+<font color = "blue">96	|</font>    }
+<font color = "blue">97	|</font>    <font color = "blue">void</font> Input() <font color = "blue">override</font>
+<font color = "blue">98	|</font>    {
+<font color = "blue">99	|</font>        std::<font color = "Goldenrod">fstream</font> fn("Y:\code.html", std::<font color = "green">ios</font>::<font color = "Goldenrod">out</font>);
+<font color = "blue">100	|</font>        <font color = "purple">if</font> (fn.is_open())
+<font color = "blue">101	|</font>        {
+<font color = "blue">102	|</font>            <font color = "purple">for</font> (<font color = "blue">auto</font> p : <font color = "green">string</font>s)
+<font color = "blue">103	|</font>            {
+<font color = "blue">104	|</font>                fn &lt&lt p &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">105	|</font>            }
+<font color = "blue">106	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">107	|</font>        }
+<font color = "blue">108	|</font>        <font color = "purple">else</font>
+<font color = "blue">109	|</font>        {
+<font color = "blue">110	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">111	|</font>        }
+<font color = "blue">112	|</font>        fn.<font color = "Goldenrod">close</font>();
+<font color = "blue">113	|</font>    }
+<font color = "blue">114	|</font>};
+<font color = "blue">115	|</font><font color = "blue">class</font> Decorator : <font color = "blue">public</font> FileInterface
+<font color = "blue">116	|</font>{
+<font color = "blue">117	|</font><font color = "blue">protected</font>:
+<font color = "blue">118	|</font>    FileInterface* file_;
+<font color = "blue">119	|</font><font color = "blue">public</font>:
+<font color = "blue">120	|</font>    Decorator(FileInterface* file) :file_(file) {}
+<font color = "blue">121	|</font>    <font color = "blue">void</font> Output() <font color = "blue">override</font>
+<font color = "blue">122	|</font>    {
+<font color = "blue">123	|</font>        <font color = "purple">return</font> this-&gtfile_-&gtOutput();
+<font color = "blue">124	|</font>    }
+<font color = "blue">125	|</font>    <font color = "blue">void</font> Input() <font color = "blue">override</font>
+<font color = "blue">126	|</font>    {
+<font color = "blue">127	|</font>        <font color = "purple">return</font> this-&gtfile_-&gtInput();
+<font color = "blue">128	|</font>    }
+<font color = "blue">129	|</font>};
+<font color = "blue">130	|</font><font color = "blue">class</font> LineDecorator :<font color = "blue">public</font> Decorator
+<font color = "blue">131	|</font>{
+<font color = "blue">132	|</font><font color = "blue">public</font>:
+<font color = "blue">133	|</font>    LineDecorator(FileInterface* file) :Decorator(file) {}
+<font color = "blue">134	|</font>    <font color = "blue">void</font> Output() <font color = "blue">override</font>
+<font color = "blue">135	|</font>    {
+<font color = "blue">136	|</font>        Decorator::Output();
+<font color = "blue">137	|</font>    }
+<font color = "blue">138	|</font>    <font color = "blue">void</font> Input() <font color = "blue">override</font>
+<font color = "blue">139	|</font>    {    
+<font color = "blue">140	|</font>        Decorator::Input();
+<font color = "blue">141	|</font>        <font color = "green">string</font>s.clear();
+<font color = "blue">142	|</font>        std::<font color = "Goldenrod">fstream</font> fs("Y:\code.html", std::<font color = "green">ios</font>::in);
+<font color = "blue">143	|</font>        <font color = "purple">if</font> (fs.is_open())
+<font color = "blue">144	|</font>        {
+<font color = "blue">145	|</font>            std::<font color = "green">string</font> line;
+<font color = "blue">146	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "\nReading in progress ... " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">147	|</font>            <font color = "purple">while</font> (getline(fs, line))
+<font color = "blue">148	|</font>            {              
+<font color = "blue">149	|</font>                <font color = "green">string</font>s.<font color = "Goldenrod">push_back</font>(line);
+<font color = "blue">150	|</font>            }
+<font color = "blue">151	|</font>        }
+<font color = "blue">152	|</font>        <font color = "purple">else</font>
+<font color = "blue">153	|</font>        {
+<font color = "blue">154	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">155	|</font>        }
+<font color = "blue">156	|</font>        fs.<font color = "Goldenrod">close</font>();
+<font color = "blue">157	|</font>        std::<font color = "Goldenrod">fstream</font> fn("Y:\code.html", std::<font color = "green">ios</font>::<font color = "Goldenrod">out</font>);
+<font color = "blue">158	|</font>        <font color = "purple">if</font> (fn.is_open())
+<font color = "blue">159	|</font>        {
+<font color = "blue">160	|</font>            <font color = "blue">int</font> count = 0;
+<font color = "blue">161	|</font>            std::<font color = "green">string</font> countline;
+<font color = "blue">162	|</font>            <font color = "purple">for</font> (<font color = "blue">auto</font> p : <font color = "green">string</font>s)
+<font color = "blue">163	|</font>            {
+<font color = "blue">164	|</font>                count++;
+<font color = "blue">165	|</font>                countline = "\&ltfont color = \"blue\"&gt" + std::to_<font color = "green">string</font>(count) + "\t|" + "&lt\/font>";
+<font color = "blue">166	|</font>                p.<font color = "Goldenrod">insert</font>(0, countline);
+<font color = "blue">167	|</font>                fn &lt&lt p &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">168	|</font>            }
+<font color = "blue">169	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">170	|</font>        }
+<font color = "blue">171	|</font>        <font color = "purple">else</font>
+<font color = "blue">172	|</font>        {
+<font color = "blue">173	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">174	|</font>        }
+<font color = "blue">175	|</font>        fn.<font color = "Goldenrod">close</font>();
+<font color = "blue">176	|</font>    }
+<font color = "blue">177	|</font>};
+<font color = "blue">178	|</font><font color = "blue">class</font> HTMLDecorator :<font color = "blue">public</font> Decorator
+<font color = "blue">179	|</font>{
+<font color = "blue">180	|</font><font color = "blue">public</font>:
+<font color = "blue">181	|</font>    HTMLDecorator(FileInterface* file) :Decorator(file) {}
+<font color = "blue">182	|</font>    <font color = "blue">void</font> Output() <font color = "blue">override</font>
+<font color = "blue">183	|</font>    {
+<font color = "blue">184	|</font>        Decorator::Output();
+<font color = "blue">185	|</font>    }
+<font color = "blue">186	|</font>    <font color = "blue">void</font> Input() <font color = "blue">override</font>
+<font color = "blue">187	|</font>    {   
+<font color = "blue">188	|</font>        /*std::<font color = "green">string</font> first = strings.front();
+<font color = "blue">189	|</font>        <font color = "green">string</font>s.front() = first.<font color = "Goldenrod">insert</font>(0, "\&lthtml\&gt\n\&ltbody\&gt\n\&ltpre\&gt");*/
+<font color = "blue">190	|</font>        Decorator::Input();
+<font color = "blue">191	|</font>        <font color = "green">string</font>s.clear();
+<font color = "blue">192	|</font>        std::<font color = "Goldenrod">fstream</font> fs("Y:\code.html", std::<font color = "green">ios</font>::in);
+<font color = "blue">193	|</font>        <font color = "purple">if</font> (fs.is_open())
+<font color = "blue">194	|</font>        {
+<font color = "blue">195	|</font>            std::<font color = "green">string</font> line;
+<font color = "blue">196	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "\nReading in progress ... " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">197	|</font>            <font color = "purple">while</font> (getline(fs, line))
+<font color = "blue">198	|</font>            {
+<font color = "blue">199	|</font>                <font color = "green">string</font>s.<font color = "Goldenrod">push_back</font>(line);
+<font color = "blue">200	|</font>            }
+<font color = "blue">201	|</font>        }
+<font color = "blue">202	|</font>        <font color = "purple">else</font>
+<font color = "blue">203	|</font>        {
+<font color = "blue">204	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">205	|</font>        }
+<font color = "blue">206	|</font>        fs.<font color = "Goldenrod">close</font>();
+<font color = "blue">207	|</font>        std::<font color = "Goldenrod">fstream</font> fv("Y:\code.html", std::<font color = "green">ios</font>::<font color = "Goldenrod">out</font>);
+<font color = "blue">208	|</font>        <font color = "purple">if</font> (fv.is_open())
+<font color = "blue">209	|</font>        {
+<font color = "blue">210	|</font>            fv &lt&lt "&lthtml&gt" &lt&lt std::<font color = "Goldenrod">endl</font> &lt&lt "&ltbody&gt" &lt&lt std::endl &lt&lt "<pre&gt" << std::endl;
+<font color = "blue">211	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">212	|</font>        }
+<font color = "blue">213	|</font>        fv.<font color = "Goldenrod">close</font>();
+<font color = "blue">214	|</font>        std::<font color = "Goldenrod">fstream</font> fn("Y:\code.html", std::<font color = "green">ios</font>::app);
+<font color = "blue">215	|</font>        <font color = "purple">if</font> (fn.is_open())
+<font color = "blue">216	|</font>        {
+<font color = "blue">217	|</font>            <font color = "purple">for</font> (<font color = "blue">auto</font> p : <font color = "green">string</font>s)
+<font color = "blue">218	|</font>            {
+<font color = "blue">219	|</font>                fn &lt&lt p &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">220	|</font>            }
+<font color = "blue">221	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">222	|</font>        }
+<font color = "blue">223	|</font>        <font color = "purple">else</font>
+<font color = "blue">224	|</font>        {
+<font color = "blue">225	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">226	|</font>        }
+<font color = "blue">227	|</font>        fn.<font color = "Goldenrod">close</font>();
+<font color = "blue">228	|</font>        std::<font color = "Goldenrod">fstream</font> fd("Y:\code.html", std::<font color = "green">ios</font>::app);
+<font color = "blue">229	|</font>        <font color = "purple">if</font> (fd.is_open())
+<font color = "blue">230	|</font>        {
+<font color = "blue">231	|</font>            fd &lt&lt "&lt\/pre&gt" &lt&lt std::<font color = "Goldenrod">endl</font> &lt&lt "&lt\/body&gt" &lt&lt std::endl &lt&lt "<\/html&gt" << std::endl;
+<font color = "blue">232	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">233	|</font>        }
+<font color = "blue">234	|</font>        <font color = "purple">else</font>
+<font color = "blue">235	|</font>        {
+<font color = "blue">236	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">237	|</font>        }
+<font color = "blue">238	|</font>        fd.<font color = "Goldenrod">close</font>();
+<font color = "blue">239	|</font>    }
+<font color = "blue">240	|</font>};
+<font color = "blue">241	|</font><font color = "blue">class</font> ColorDecorator :<font color = "blue">public</font> Decorator
+<font color = "blue">242	|</font>{
+<font color = "blue">243	|</font><font color = "blue">public</font>:
+<font color = "blue">244	|</font>    ColorDecorator(FileInterface* file) :Decorator(file) {}
+<font color = "blue">245	|</font>    <font color = "blue">void</font> Output() <font color = "blue">override</font>
+<font color = "blue">246	|</font>    {   
+<font color = "blue">247	|</font>        Decorator::Output();
+<font color = "blue">248	|</font>    }
+<font color = "blue">249	|</font>    <font color = "blue">void</font> Input() <font color = "blue">override</font>
+<font color = "blue">250	|</font>    {  
+<font color = "blue">251	|</font>        Decorator::Input();
+<font color = "blue">252	|</font>        <font color = "green">string</font>s.clear();
+<font color = "blue">253	|</font>        std::<font color = "Goldenrod">fstream</font> fs("Y:\code.html", std::<font color = "green">ios</font>::in);
+<font color = "blue">254	|</font>        <font color = "purple">if</font> (fs.is_open())
+<font color = "blue">255	|</font>        {
+<font color = "blue">256	|</font>            std::<font color = "green">string</font> line;
+<font color = "blue">257	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "\nReading in progress ... " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">258	|</font>            <font color = "purple">while</font> (getline(fs, line))
+<font color = "blue">259	|</font>            {
+<font color = "blue">260	|</font>                <font color = "green">string</font>s.<font color = "Goldenrod">push_back</font>(line);
+<font color = "blue">261	|</font>            }
+<font color = "blue">262	|</font>        }
+<font color = "blue">263	|</font>        <font color = "purple">else</font>
+<font color = "blue">264	|</font>        {
+<font color = "blue">265	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">266	|</font>        }
+<font color = "blue">267	|</font>        fs.<font color = "Goldenrod">close</font>();
+<font color = "blue">268	|</font>        std::<font color = "Goldenrod">fstream</font> fn("Y:\code.html", std::<font color = "green">ios</font>::<font color = "Goldenrod">out</font>);
+<font color = "blue">269	|</font>        <font color = "purple">if</font> (fn.is_open())
+<font color = "blue">270	|</font>        {
+<font color = "blue">271	|</font>            <font color = "blue">int</font> count = 0;
+<font color = "blue">272	|</font>            std::<font color = "green">string</font> countline;
+<font color = "blue">273	|</font>            <font color = "purple">for</font> (<font color = "blue">auto</font> p : <font color = "green">string</font>s)
+<font color = "blue">274	|</font>            {
+<font color = "blue">275	|</font>                p=FindKeywords(p);            
+<font color = "blue">276	|</font>                fn &lt&lt p &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">277	|</font>            }
+<font color = "blue">278	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Recording completed! " &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">279	|</font>        }
+<font color = "blue">280	|</font>        <font color = "purple">else</font>
+<font color = "blue">281	|</font>        {
+<font color = "blue">282	|</font>            std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Something going wrong!";
+<font color = "blue">283	|</font>        }
+<font color = "blue">284	|</font>        fn.<font color = "Goldenrod">close</font>();
+<font color = "blue">285	|</font>    }
+<font color = "blue">286	|</font>    std::<font color = "green">string</font> FindKeywords(std::string line)
+<font color = "blue">287	|</font>    {
+<font color = "blue">288	|</font>        <font color = "purple">for</font> (<font color = "blue">auto</font> p : myFirstMap)
+<font color = "blue">289	|</font>        {
+<font color = "blue">290	|</font>            std::size_t  found = line.<font color = "Goldenrod">find</font>(p.first);
+<font color = "blue">291	|</font>            <font color = "purple">if</font> (found != std::<font color = "green">string</font>::npos)
+<font color = "blue">292	|</font>            {
+<font color = "blue">293	|</font>                line.replace(line.<font color = "Goldenrod">find</font>(p.first), p.first.length(), "\&ltfont color = \"" + p.second + "\"&gt" + p.first + "&lt\/font&gt");
+<font color = "blue">294	|</font>            }
+<font color = "blue">295	|</font>        }
+<font color = "blue">296	|</font>        <font color = "purple">return</font> line;
+<font color = "blue">297	|</font>    }
+<font color = "blue">298	|</font>};
+<font color = "blue">299	|</font><font color = "blue">void</font> ResultFile(FileInterface* file)
+<font color = "blue">300	|</font>{
+<font color = "blue">301	|</font>    file-&gtOutput();
+<font color = "blue">302	|</font>    file-&gtInput();
+<font color = "blue">303	|</font>}
+<font color = "blue">304	|</font><font color = "blue">void</font> Choice(FileInterface* file)
+<font color = "blue">305	|</font>{
+<font color = "blue">306	|</font>    <font color = "blue">int</font> n;
+<font color = "blue">307	|</font>    std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Do you want a code lines in your file?\n1. Yes\n2. No" &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">308	|</font>    std::<font color = "Goldenrod">cin</font> &gt&gt n;
+<font color = "blue">309	|</font>    <font color = "purple">if</font> (n == 1)
+<font color = "blue">310	|</font>    {
+<font color = "blue">311	|</font>        file = <font color = "blue">new</font> LineDecorator(file);
+<font color = "blue">312	|</font>    } 
+<font color = "blue">313	|</font>    std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Do you want a file with HTML tags?\n1. Yes\n2. No" &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">314	|</font>    std::<font color = "Goldenrod">cin</font> &gt&gt n;
+<font color = "blue">315	|</font>    <font color = "purple">if</font> (n == 1)
+<font color = "blue">316	|</font>    {
+<font color = "blue">317	|</font>        file = <font color = "blue">new</font> HTMLDecorator(file);
+<font color = "blue">318	|</font>    }    
+<font color = "blue">319	|</font>    std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Do you want a set color to keywords in your file?\n1. Yes\n2. No" &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">320	|</font>    std::<font color = "Goldenrod">cin</font> &gt&gt n;
+<font color = "blue">321	|</font>    <font color = "purple">if</font> (n == 1)
+<font color = "blue">322	|</font>    {
+<font color = "blue">323	|</font>        file = <font color = "blue">new</font> ColorDecorator(file);
+<font color = "blue">324	|</font>    }   
+<font color = "blue">325	|</font>    ResultFile(file);
+<font color = "blue">326	|</font>    std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "Check your file in browser!" &lt&lt std::<font color = "Goldenrod">endl</font>;
+<font color = "blue">327	|</font>    <font color = "Goldenrod">system</font>("Y:\code.html");
+<font color = "blue">328	|</font>    <font color = "blue">delete</font> file;
+<font color = "blue">329	|</font>}
+<font color = "blue">330	|</font><font color = "blue">int</font> <font color = "Goldenrod">main</font>()
+<font color = "blue">331	|</font>{
+<font color = "blue">332	|</font>    FileInterface* file = <font color = "blue">new</font> File;
+<font color = "blue">333	|</font>    Choice(file);
+<font color = "blue">334	|</font>    /*FileInterface* file = <font color = "blue">new</font> File;
+<font color = "blue">335	|</font>    FileInterface* linedecorator = <font color = "blue">new</font> LineDecorator(file);
+<font color = "blue">336	|</font>    FileInterface* colordecorator = <font color = "blue">new</font> ColorDecorator(linedecorator);
+<font color = "blue">337	|</font>    FileInterface* htmldecorator = <font color = "blue">new</font> HTMLDecorator(colordecorator);
+<font color = "blue">338	|</font>    std::<font color = "Goldenrod">c<font color = "Goldenrod">out</font></font> &lt&lt "File: Decorator writing!";
+<font color = "blue">339	|</font>    ResultFile(htmldecorator);
+<font color = "blue">340	|</font>    <font color = "Goldenrod">system</font>("Y:\code.html");
+<font color = "blue">341	|</font>    <font color = "blue">delete</font> file;
+<font color = "blue">342	|</font>    <font color = "blue">delete</font> linedecorator;
+<font color = "blue">343	|</font>    <font color = "blue">delete</font> htmldecorator;
+<font color = "blue">344	|</font>    <font color = "blue">delete</font> colordecorator;*/
+<font color = "blue">345	|</font>}

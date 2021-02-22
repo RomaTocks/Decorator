@@ -1,0 +1,123 @@
+<html>
+<body style="background-color:White	; ">
+<pre>
+<font color = "blue">1	|</font>﻿#<font color = "purple">include</font> &lt<font color = "green">string</font>&gt
+<font color = "blue">2	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">iostream</font>&gt
+<font color = "blue">3	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">fstream</font>&gt
+<font color = "blue">4	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">vector</font>&gt
+<font color = "blue">5	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">istream</font>&gt
+<font color = "blue">6	|</font>#<font color = "purple">include</font> &lt<font color = "Goldenrod">map</font>&gt 
+<font color = "blue">7	|</font>std::<font color = "Goldenrod">vector</font>&ltstd::<font color = "green">string</font>&gt strings;
+<font color = "blue">8	|</font>std::<font color = "Goldenrod">map</font>&ltstd::<font color = "green">string</font>, std::string&gt myFirstMap =
+<font color = "blue">9	|</font>{
+<font color = "blue">10	|</font>	{ "<font color = "purple">include</font>", "purple" },
+<font color = "blue">11	|</font>	{ "<font color = "purple">else</font>", "purple" },
+<font color = "blue">12	|</font>	{ "<font color = "purple">return</font>", "purple" },
+<font color = "blue">13	|</font>	{ "<font color = "purple">for</font>", "purple" },
+<font color = "blue">14	|</font>	{ "<font color = "purple">if</font>", "purple" },
+<font color = "blue">15	|</font>	{ "<font color = "blue">auto</font>", "blue" },
+<font color = "blue">16	|</font>	{ "<font color = "blue">void</font>", "blue" },
+<font color = "blue">17	|</font>	{ "<font color = "Goldenrod">istream</font>", "Goldenrod" },
+<font color = "blue">18	|</font>	{ "<font color = "Goldenrod">iostream</font>", "Goldenrod" },
+<font color = "blue">19	|</font>	{ "<font color = "Goldenrod">fstream</font>", "Goldenrod" },
+<font color = "blue">20	|</font>	{ "<font color = "Goldenrod">vector</font>", "Goldenrod" },
+<font color = "blue">21	|</font>	{ "<font color = "Goldenrod">map</font>", "Goldenrod" },
+<font color = "blue">22	|</font>	{ "<font color = "blue">int</font>", "blue" },
+<font color = "blue">23	|</font>	{ "<font color = "green">string</font>", "green" },
+<font color = "blue">24	|</font>	{ "<font color = "Goldenrod">main</font>", "Goldenrod" },
+<font color = "blue">25	|</font>	{ "<font color = "purple">while</font>", "purple" },
+<font color = "blue">26	|</font>	{ "<font color = "Goldenrod">system</font>", "Goldenrod" }	
+<font color = "blue">27	|</font>};
+<font color = "blue">28	|</font>std::<font color = "green">string</font> FindKeywords(std::string line)
+<font color = "blue">29	|</font>{
+<font color = "blue">30	|</font>	<font color = "purple">for</font> (<font color = "blue">auto</font> p : myFirstMap)
+<font color = "blue">31	|</font>	{		
+<font color = "blue">32	|</font>		std::size_t  found = line.find(p.first);
+<font color = "blue">33	|</font>		<font color = "purple">if</font> (found != std::<font color = "green">string</font>::npos)
+<font color = "blue">34	|</font>		{
+<font color = "blue">35	|</font>			line.replace(line.find(p.first), p.first.length(), "\&ltfont color = \"" + p.second + "\"&gt"+p.first+"&lt\/font&gt");
+<font color = "blue">36	|</font>		}		
+<font color = "blue">37	|</font>	}	
+<font color = "blue">38	|</font>	<font color = "purple">return</font> line;
+<font color = "blue">39	|</font>}
+<font color = "blue">40	|</font><font color = "blue">void</font> InputStream()
+<font color = "blue">41	|</font>{
+<font color = "blue">42	|</font>	std::<font color = "Goldenrod">fstream</font> fs("E:\code.html", std::ios::out);
+<font color = "blue">43	|</font>	<font color = "purple">if</font> (fs.is_open())
+<font color = "blue">44	|</font>	{
+<font color = "blue">45	|</font>		fs &lt&lt "&lt\html&gt" &lt&lt std::endl&lt&lt"&ltbody style=\"background-color:White	; \"&gt"&lt&lt std::endl &lt&lt "<\pre&gt" << std::endl;
+<font color = "blue">46	|</font>		std::cout &lt&lt "Recording in progress ... " &lt&lt std::endl;
+<font color = "blue">47	|</font>		<font color = "purple">for</font>(<font color = "blue">auto</font> p:<font color = "green">string</font>s)
+<font color = "blue">48	|</font>		{
+<font color = "blue">49	|</font>			fs &lt&lt p &lt&lt std::endl;
+<font color = "blue">50	|</font>		}
+<font color = "blue">51	|</font>		std::cout &lt&lt "Recording completed! " &lt&lt std::endl;
+<font color = "blue">52	|</font>	}
+<font color = "blue">53	|</font>	<font color = "purple">else</font>
+<font color = "blue">54	|</font>	{
+<font color = "blue">55	|</font>		std::cout &lt&lt "Something going wrong!";
+<font color = "blue">56	|</font>	}
+<font color = "blue">57	|</font>	fs &lt&lt "&lt\/pre&gt" &lt&lt std::endl &lt&lt "&lt\/body&gt" &lt&lt std::endl &lt&lt "<\/html&gt" << std::endl;
+<font color = "blue">58	|</font>	fs.close();
+<font color = "blue">59	|</font>}
+<font color = "blue">60	|</font><font color = "blue">void</font> OutputStream()
+<font color = "blue">61	|</font>{
+<font color = "blue">62	|</font>	<font color = "blue">int</font> count=0;
+<font color = "blue">63	|</font>	std::<font color = "Goldenrod">fstream</font> fs("E:\Decoratorlab.cpp", std::ios::in);
+<font color = "blue">64	|</font>	<font color = "purple">if</font> (fs.is_open())
+<font color = "blue">65	|</font>	{
+<font color = "blue">66	|</font>		std::<font color = "green">string</font> line;	
+<font color = "blue">67	|</font>		std::<font color = "green">string</font> countline;
+<font color = "blue">68	|</font>		std::cout &lt&lt "\nReading in progress ... " &lt&lt std::endl;
+<font color = "blue">69	|</font>		<font color = "purple">while</font> (getline(fs, line))
+<font color = "blue">70	|</font>		{
+<font color = "blue">71	|</font>			count++;
+<font color = "blue">72	|</font>			std::cout &lt&lt line &lt&lt std::endl;
+<font color = "blue">73	|</font>			<font color = "purple">for</font> (<font color = "blue">auto</font> d : line)
+<font color = "blue">74	|</font>			{
+<font color = "blue">75	|</font>				<font color = "purple">if</font> (d == '&lt')
+<font color = "blue">76	|</font>				{
+<font color = "blue">77	|</font>					line.insert(line.find(d), "&lt");				
+<font color = "blue">78	|</font>				}
+<font color = "blue">79	|</font>				<font color = "purple">if</font> (d == '&lt')
+<font color = "blue">80	|</font>				{
+<font color = "blue">81	|</font>					line.erase(line.find(d), 1);
+<font color = "blue">82	|</font>				}
+<font color = "blue">83	|</font>			}
+<font color = "blue">84	|</font>			<font color = "purple">for</font> (<font color = "blue">auto</font> d : line)
+<font color = "blue">85	|</font>			{
+<font color = "blue">86	|</font>				<font color = "purple">if</font> (d == '&gt')
+<font color = "blue">87	|</font>				{
+<font color = "blue">88	|</font>					line.insert(line.find(d), "&gt");					
+<font color = "blue">89	|</font>				}
+<font color = "blue">90	|</font>				<font color = "purple">if</font> (d == '&gt')
+<font color = "blue">91	|</font>				{
+<font color = "blue">92	|</font>					line.erase(line.find(d), 1);
+<font color = "blue">93	|</font>				}
+<font color = "blue">94	|</font>			}
+<font color = "blue">95	|</font>			std::<font color = "green">string</font> sline = FindKeywords(line);
+<font color = "blue">96	|</font>			line.replace(0, sline.length(), sline);
+<font color = "blue">97	|</font>			countline = "\&ltfont color = \"blue\"&gt"+std::to_<font color = "green">string</font>(count)+"\t|"+"&lt\/font&gt" ;
+<font color = "blue">98	|</font>			line.insert(0,countline);
+<font color = "blue">99	|</font>			<font color = "green">string</font>s.push_back(line);
+<font color = "blue">100	|</font>		}
+<font color = "blue">101	|</font>		std::cout &lt&lt "\nReading completed! " &lt&lt std::endl;
+<font color = "blue">102	|</font>	}
+<font color = "blue">103	|</font>	<font color = "purple">else</font>
+<font color = "blue">104	|</font>	{
+<font color = "blue">105	|</font>		std::cout &lt&lt "Something going wrong!";
+<font color = "blue">106	|</font>	}
+<font color = "blue">107	|</font>	fs.close();
+<font color = "blue">108	|</font>	InputStream();
+<font color = "blue">109	|</font>}
+<font color = "blue">110	|</font><font color = "blue">int</font> <font color = "Goldenrod">main</font>()
+<font color = "blue">111	|</font>{
+<font color = "blue">112	|</font>	std::<font color = "green">string</font> sol=FindKeywords("<font color = "purple">if</font>in<font color = "purple">else</font>cludeif<font color = "purple">include</font>");
+<font color = "blue">113	|</font>	std::cout &lt&lt sol;
+<font color = "blue">114	|</font>	OutputStream();
+<font color = "blue">115	|</font>    std::cout &lt&lt "Hello World!\n";
+<font color = "blue">116	|</font>	<font color = "Goldenrod">system</font>("E:\code.html");
+<font color = "blue">117	|</font>}
+</pre>
+</body>
+</html>

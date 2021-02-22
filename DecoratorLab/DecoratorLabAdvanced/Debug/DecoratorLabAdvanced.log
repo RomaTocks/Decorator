@@ -1,0 +1,15 @@
+﻿  DecoratorLabAdvanced.cpp
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(44,25): warning C4129: D: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(63,25): warning C4129: c: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(104,25): warning C4129: c: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(112,29): warning C4129: <: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(112,90): warning C4129: /: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(130,25): warning C4129: c: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(148,25): warning C4129: c: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(151,19): warning C4129: h: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(151,106): warning C4129: p: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(156,19): warning C4129: /: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(156,45): warning C4129: /: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(156,72): warning C4129: /: неизвестная escape-последовательность
+Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\DecoratorLabAdvanced\DecoratorLabAdvanced.cpp(183,12): warning C4129: c: неизвестная escape-последовательность
+  DecoratorLabAdvanced.vcxproj -> Y:\ООП С++ ЛАБ. 2 КУРС 2 СЕМЕСТР\ЛАБ.5\DecoratorLab\Debug\DecoratorLabAdvanced.exe
